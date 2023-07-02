@@ -1,6 +1,6 @@
 # TO-DO-LIST
 
-This is a simple web application that allows you to create a to-do list using HTML, CSS, and JavaScript. You can add new items, mark them as completed, and remove them from the list.
+This is a simple web application that allows you to create a to-do list created using HTML, CSS, and JavaScript. You can add new items, mark them as completed, and remove them from the list.
 
 ## Getting Started
 
