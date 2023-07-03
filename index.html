@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable = 0">
   <title>TO DO LIST</title>
   <link rel="stylesheet" type="text/css" href="index.css">
   <link rel="shortcut icon" type="image/png" href="tl2.png">
@@ -14,7 +14,8 @@
 
 <body>
   <div class="container">
-    <div class="header">
+    <div class="container2">
+      <div class="header">
       <img src="./todolist.jpeg
           " alt="to">
       <div class="clear">
@@ -29,10 +30,12 @@
     </div>
     <div class="item">
       <div class="add-to-do">
-        <i onclick="newElement()" class="fa fa-plus-circle" aria-hidden="true"></i>
+        <i onclick="newElement()" class="fa fa-plus-circle" aria-hidden="true" title="add task"></i>
         <input type="text" id="myInput" placeholder="Add a task">
       </div>
     </div>
+    </div>
+    
   </div>
 
   <script>
