@@ -1,71 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     padding: 0;
     margin: 0;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     font-family: 'Titillium Web', sans-serif;
 }
 
-/*  container  */
-.container{
-    padding:10px;
-    width:380px;
-    margin:0 auto;
+.container {
+    padding: 10px;
+    width: 380px;
+    margin: 0 auto;
 }
 
-/*  header  */
-.header{
+.header {
     width: 380px;
-    height:200px;
-    /* background-image: url('todolist.jpeg'); */
-    background-size: cover;
-    background-size: 100% 200%;
-    background-repeat: no-repeat;
-    /* border-radius: 15px 15px 0 0; */
+    height: 200px;
+    border-radius: 15px 15px 0 0;
     position: relative;
 }
-.header img{
+
+.header img {
     width: 380px;
     height: 200px;
     object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
-.clear{
-    width : 30px;
+
+.clear {
+    width: 30px;
     height: 30px;
     position: absolute;
-    right:20px;
+    right: 20px;
     top: 20px;
 }
-.clear i{
+
+.clear i {
     font-size: 30px;
     color: #925b09;
 }
-.clear i:hover{
+
+.clear i:hover {
     cursor: pointer;
     text-shadow: 1px 3px 5px #000;
     transform: rotate(45deg);
 }
 
-
-/*  content */
-.content{
-    width:380px;
+.content {
+    width: 380px;
     height: 350px;
-    max-height:350px;
+    max-height: 350px;
     background-color: #FFF;
     overflow: auto;
 }
-.content::-webkit-scrollbar { 
-    display: none; 
+
+.content::-webkit-scrollbar {
+    display: none;
 }
-.content ul{
-    padding:0;
-    margin:0;
+
+.content ul {
+    padding: 0;
+    margin: 0;
 }
+
 ul li {
     cursor: pointer;
     position: relative;
@@ -76,26 +77,26 @@ ul li {
     transition: 0.2s;
 
     -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 ul li:nth-child(odd) {
     background: #f9f9f9;
-  }
+}
 
-  ul li:hover {
+ul li:hover {
     background: #ddd;
-  }
+}
 
-  ul li.checked {
+ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
-  }
+}
 
-  ul li.checked::before {
+ul li.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
@@ -106,30 +107,30 @@ ul li:nth-child(odd) {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
-  }
+}
 
-  .close {
+.close {
     position: absolute;
     right: 0;
     top: 0;
     padding: 12px 16px 12px 16px;
-  }
+}
 
-  .close:hover {
+.close:hover {
     background-color: #925b09;
     color: white;
-  }
+}
 
-.item{
-    width:380px;
+.item {
+    width: 380px;
     height: 55px;
     min-height: 45px;
     position: relative;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     list-style: none;
     padding: 0;
     margin: 0;
-    
+
 }
 
 .item:hover {
@@ -137,27 +138,28 @@ ul li:nth-child(odd) {
 
 }
 
-.lineThrough{
+.lineThrough {
     text-decoration: line-through;
-    color : #ccc;
+    color: #ccc;
 }
 
 /*  add item  */
-.add-to-do{
+.add-to-do {
     position: relative;
     width: 380px;
-    height:55px;
+    height: 55px;
     background-color: #FFF;
     padding: 10px;
-    border: 1px solid rgba(0,0,0,0.1);
-}
-.add-to-do i{
-    position: absolute;
-    font-size: 40px;
-    color:#925b09;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.add-to-do input{
+.add-to-do i {
+    position: absolute;
+    font-size: 40px;
+    color: #925b09;
+}
+
+.add-to-do input {
     position: absolute;
     left: 50px;
     height: 35px;
@@ -165,25 +167,33 @@ ul li:nth-child(odd) {
     background-color: transparent;
     border: none;
     font-size: 20px;
-    padding-left:10px;
+    padding-left: 10px;
 }
-.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color:#925b09;
+
+.add-to-do input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #925b09;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
-.add-to-do input::-moz-placeholder { /* Firefox 19+ */
-    color:#925b09;
+
+.add-to-do input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #925b09;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
-.add-to-do input:-ms-input-placeholder { /* IE 10+ */
-    color:#925b09;
+
+.add-to-do input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #925b09;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
-.add-to-do input:-moz-placeholder { /* Firefox 18- */
-    color:#925b09;
+
+.add-to-do input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #925b09;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
 }
