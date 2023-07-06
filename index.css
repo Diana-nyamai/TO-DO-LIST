@@ -9,6 +9,7 @@ body {
     margin: 0;
     background-color: rgba(0, 0, 0, 0.1);
     font-family: 'Titillium Web', sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -198,4 +199,20 @@ ul li.checked::before {
     color: #925b09;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
+}
+@media all and (max-width: 768px) {
+    .content, .header, .header img, .item, .add-to-do{
+        width: 320px;
+    }
+    .add-to-do input{
+        width: 250px;
+    }
+}
+@media all and (max-width: 280px) {
+    .content, .header, .header img, .item, .add-to-do{
+        width: 250px;
+    }
+    .add-to-do input{
+        width: 180px;
+    }
 }
